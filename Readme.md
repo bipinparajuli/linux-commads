@@ -23,3 +23,18 @@ mkdir dirname | make a directory
 rmdir | removes a directory
 apt-get | command to install and update packages
 
+# Process Command
+
+Command | Description
+---- | ----
+bg | Send process to background
+fg | Run stopped process on the foreground
+top | detail on all active process
+ps | gives the status of process running for a user
+ps PID | gives the status of particular process
+pidof | gives the process id of process
+kill PID | kill the process
+nice | Starts a process with given priority
+renice | Change the priority of already running process
+df | gives the free hard disk on a system
+free | gives the free RAM of a system
