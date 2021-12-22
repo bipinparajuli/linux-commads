@@ -38,3 +38,24 @@ nice | Starts a process with given priority
 renice | Change the priority of already running process
 df | gives the free hard disk on a system
 free | gives the free RAM of a system
+
+# User management Command
+
+Command | Description
+---- | ----
+sudo adduser username | Add new user to linux machine
+sudo userdel -r username | Delete a user from operating system
+usermod | Command to modify existing user properties
+usermod -c "This is description" username | Update the comment
+usermod -d /var/www/ username | Change the user Home directory
+usermod -e 2022-12-12 | Setting up user expirydate
+user -L username | Lock the user account
+user -U username | Unlock the user account
+groupadd groupname | Create new group
+usermod -G groupname username | Add User to the group
+id username | Check user group information
+groupmod -n newname oldname | Change linux groupname
+groupmod -g newgid groupname | Change groupid of exisiting group
+gpasswd -d username groupname | Remove a user from linux group
+groupdel groupname | Delete linux group
+
