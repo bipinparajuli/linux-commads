@@ -59,3 +59,41 @@ groupmod -g newgid groupname | Change groupid of exisiting group
 gpasswd -d username groupname | Remove a user from linux group
 groupdel groupname | Delete linux group
 
+# Hardware Command
+
+Command | Description
+---- | ----
+dmesg | Display bootup messages
+cat /proc/cpuinfo | Display more information about CPU e.g model,model name,cores, vendor id
+cat /proc/meminfo | Display more information about hardware memory e.g Total and free memory
+lshw | Display information about system's hardware configuration
+free -m | Display free and used memory in the system 
+lspci -tv | Display PCI devices in a tree-like diagram
+lsusb -tv | Display USB devices ina tree-like diagram
+dmidecode | Displays hardware information from the BIOS
+hdparm -i /dev/xda | Displays information about disk data
+badblocks -s /dev/xda | Test for unreadable blocks on disk  
+
+# Network Command
+
+Command | Description
+---- | ----
+SSH username@ipaddress or hostname | login into a remote Linux machine using SSH
+ping hostname="" or="" | Ping and Analyze network and host connections
+dir | Display files in the current directory of a remote computer
+cd "dirname" | Change directory to "dirname" on a remote computer
+put file | Upload file from local to remote computer
+get file | Download file from remote to local computer
+ip addr show | Display IP address and all the network interfaces
+ip address add 192.168.0.1/24 dev etho | Assign IP address to interface eth0
+ifconfig | Displays IP addresses of all network interfaces
+ping host | ping command sends an ICMP echo request to establish a connection to server/PC
+whois domain | Retrives more information about a domain name
+dig domain | Retrives DNS information about the domain
+dig -x host | Performs reverse lookup on a domain
+host google.com | Performs an IP lookup for the domain name
+hostname -l | Display local IP address
+wget file_name | Downloads a file from an online source
+netstat_pnltu | Display all active listenign ports
+quit | Logout
+
